@@ -40,10 +40,12 @@ const TrackListScreen = ({ navigation }) => {
         <FlatList
           data={data}
           keyExtractor={data => data.name}
-          renderItem={({ item }) => {
+          renderItem={({ item, index }) => {
             return (
               <TouchableOpacity
-                style={styles.track}
+                style={
+                  index < data.length - 1 ? styles.track : styles.trackNoBorder
+                }
                 onPress={() => navigation.navigate("TrackDetail")}
               >
                 <Text style={styles.trackName}>{item.name}</Text>

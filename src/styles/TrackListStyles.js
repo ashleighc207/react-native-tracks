@@ -21,6 +21,12 @@ const styles = StyleSheet.create({
     alignItems: "center",
     flex: 1
   },
+  trackNoBorder: {
+    paddingVertical: 20,
+    flexDirection: "row",
+    alignItems: "center",
+    flex: 1
+  },
   trackName: {
     flexShrink: 1,
     flex: 1,
