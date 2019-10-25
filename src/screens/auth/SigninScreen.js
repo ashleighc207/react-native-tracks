@@ -26,6 +26,7 @@ const SigninScreen = ({ navigation }) => {
       <Button
         style={styles.textOnlyButton}
         title="Sign up"
+        color="rgba(51,165,162,1.0)"
         onPress={() => navigation.navigate("Signup")}
       />
     </View>

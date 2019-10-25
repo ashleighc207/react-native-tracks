@@ -1,8 +1,12 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { SafeAreaView, View, StyleSheet, Text } from "react-native";
 
 const TrackCreateScreen = () => {
-  return <Text> Track Create Screen </Text>;
+  return (
+    <SafeAreaView>
+      <Text> Track Create Screen </Text>
+    </SafeAreaView>
+  );
 };
 
 const styles = StyleSheet.create({});
