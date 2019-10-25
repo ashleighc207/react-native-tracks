@@ -1,10 +1,13 @@
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
+import styles from "../../styles/TrackDetailStyles";
 
 const TrackDetailScreen = () => {
-  return <Text> Track Detail Screen </Text>;
+  return (
+    <View style={styles.mainContainer}>
+      <Text style={styles.heading}>Your 'name' Track</Text>
+    </View>
+  );
 };
-
-const styles = StyleSheet.create({});
 
 export default TrackDetailScreen;
